@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Read csv File</Text>
+    <Description>Read Text from a csv file</Description>
+    <Assembly>RAB_Session02_Skills.dll</Assembly>
+    <FullClassName>RAB_Session02_Skills.Command</FullClassName>
+    <ClientId>d86d2c21-4dee-49b8-84e3-5fea1ed14121</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAB_Session02_Skills</Name>
+    <Assembly>RAB_Session02_Skills.dll</Assembly>
+    <FullClassName>RAB_Session02_Skills.App</FullClassName>
+    <ClientId>e69ca49c-8b98-478d-9d5d-cdc14f6aace5</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
