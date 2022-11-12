@@ -9,6 +9,17 @@
     <VendorId>com.typepad.thebuildingcoder</VendorId>
     <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
   </AddIn>
+	<AddIn Type="Command">
+		<Text>Project Set Up</Text>
+		<Description>Project setup</Description>
+		<Assembly>RAB_Session02_Skills.dll</Assembly>
+		<FullClassName>RAB_Session02_Skills.CmdProjectSetup</FullClassName>
+		<ClientId>
+			DEA39A25-DD59-4646-85A2-BDD19BA05BB6
+		</ClientId>
+		<VendorId>com.typepad.thebuildingcoder</VendorId>
+		<VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+	</AddIn>
   <AddIn Type="Application">
     <Name>Application RAB_Session02_Skills</Name>
     <Assembly>RAB_Session02_Skills.dll</Assembly>
