@@ -40,6 +40,28 @@ namespace RAB_Session02_Skills
                 var roomName = cellString[1];
                 var roomArea = cellString[2];
             }
+
+            // Create Level and Sheet
+
+            FilteredElementCollector collector = new FilteredElementCollector(doc);
+            collector.OfCategory(BuiltInCategory.OST_TitleBlocks);
+            ElementId tblockId = collector.FirstElementId();
+
+            Transaction t = new Transaction(doc);
+            t.Start("Create Level and Sheet");
+
+            // Create Level
+            double levelHeight = 20;
+            Level myLevel = Level.Create(doc, levelHeight);
+            myLevel.Name = "My Level";
+
+            // Create Sheet
+            ViewSheet mySheet = ViewSheet.Create(doc, tblockId);
+            mySheet.Name = "M101";
+
+            t.Commit();
+            t.Dispose();
+
             return Result.Succeeded;
         }
     }
